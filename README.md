@@ -14,4 +14,4 @@ Tracks daylight saving time <br/>
 Changes Font color and doodles based on time of day <br/>
 Displays temperature based on RTC Chip <br/>
 <br/>
-Fonts/doodles hardcoded, mapping them into any data structure overflows the Uno R3 memory 
+Fonts/doodles hardcoded, mapping them into any data structure overflows the Uno R3 memory on runtime
