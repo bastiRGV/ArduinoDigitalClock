@@ -59,7 +59,7 @@ void setup() {
   // rtc.set(second, minute, hour, dayOfWeek, dayOfMonth, month, year)
   // set day of week (1=Sunday, 7=Saturday)
   // Winterzeit/Standardzeit
-  // rtc.set(52, 45, 21, 3, 28, 1, 25);
+  // rtc.set(20, 38, 18, 5, 20, 3, 25);
 
   //Alarm 1 jede Stunde zum triggern der Farb-/Iconumstellung
   rtc.alarmClearFlag(URTCLIB_ALARM_1);
@@ -1208,16 +1208,16 @@ void farbumstellung(){
      (stunde >= 18 && stunde < 21)   ){
 
     //Morgens/Abends
-    colorR = 10;
-    colorG = 4;
+    colorR = 15;
+    colorG = 6;
     colorB = 0;
 
   }else if(stunde >= 9 && stunde < 18){
 
     //Tagüber
     colorR = 0;
-    colorG = 2;
-    colorB = 2;
+    colorG = 15;
+    colorB =9;
 
   }else{
 
@@ -1272,16 +1272,16 @@ void drawDoodleMorning(){
   matrix.drawPixel(11, 14, matrix.Color444(6, 15, 0));
   matrix.drawPixel(12, 14, matrix.Color444(6, 15, 0));
 
-  matrix.drawPixel(6, 13, matrix.Color444(15, 8, 0));
-  matrix.drawPixel(7, 13, matrix.Color444(15, 8, 0));
-  matrix.drawPixel(8, 13, matrix.Color444(15, 8, 0));
-  matrix.drawPixel(9, 13, matrix.Color444(15, 8, 0));
-  matrix.drawPixel(10, 13, matrix.Color444(15, 8, 0));
+  matrix.drawPixel(6, 13, matrix.Color444(15, 10, 0));
+  matrix.drawPixel(7, 13, matrix.Color444(15, 10, 0));
+  matrix.drawPixel(8, 13, matrix.Color444(15, 10, 0));
+  matrix.drawPixel(9, 13, matrix.Color444(15, 10, 0));
+  matrix.drawPixel(10, 13, matrix.Color444(15, 10, 0));
 
-  matrix.drawPixel(7, 12, matrix.Color444(15, 8, 0));
-  matrix.drawPixel(8, 12, matrix.Color444(15, 8, 0));
+  matrix.drawPixel(7, 12, matrix.Color444(15, 10, 0));
+  matrix.drawPixel(8, 12, matrix.Color444(15, 10, 0));
 
-  matrix.drawPixel(9, 12, matrix.Color444(15, 8, 0));
+  matrix.drawPixel(9, 12, matrix.Color444(15, 10, 0));
 
   matrix.drawPixel(11, 12, matrix.Color444(15, 15, 15));
   matrix.drawPixel(12, 12, matrix.Color444(15, 15, 15));
@@ -1291,13 +1291,13 @@ void drawDoodleMorning(){
 
   if(doodleCycle == 0){
 
-    matrix.drawPixel(7, 11, matrix.Color444(15, 8, 0));
-    matrix.drawPixel(8, 11, matrix.Color444(15, 8, 0));
-    matrix.drawPixel(9, 11, matrix.Color444(15, 8, 0));
+    matrix.drawPixel(7, 11, matrix.Color444(15, 10, 0));
+    matrix.drawPixel(8, 11, matrix.Color444(15, 10, 0));
+    matrix.drawPixel(9, 11, matrix.Color444(15, 10, 0));
 
-    matrix.drawPixel(6, 12, matrix.Color444(15, 8, 0));
+    matrix.drawPixel(6, 12, matrix.Color444(15, 10, 0));
 
-    matrix.drawPixel(10, 12, matrix.Color444(15, 8, 0));
+    matrix.drawPixel(10, 12, matrix.Color444(15, 10, 0));
     matrix.drawPixel(13, 12, matrix.Color444(15, 15, 15));
 
     matrix.drawPixel(3, 11, matrix.Color444(0, 0, 0));
@@ -1341,16 +1341,16 @@ void drawDoodleDay(){
 
   matrix.drawPixel(5, 12, matrix.Color444(15, 15, 15));
 
-  matrix.drawPixel(7, 12, matrix.Color444(15, 8, 0));
-  matrix.drawPixel(8, 12, matrix.Color444(15, 8, 0));
+  matrix.drawPixel(7, 12, matrix.Color444(15, 11, 0));
+  matrix.drawPixel(8, 12, matrix.Color444(15, 11, 0));
 
-  matrix.drawPixel(5, 13, matrix.Color444(15, 8, 0));
-  matrix.drawPixel(6, 13, matrix.Color444(15, 8, 0));
-  matrix.drawPixel(7, 13, matrix.Color444(15, 8, 0));
-  matrix.drawPixel(8, 13, matrix.Color444(15, 8, 0));
+  matrix.drawPixel(5, 13, matrix.Color444(15, 11, 0));
+  matrix.drawPixel(6, 13, matrix.Color444(15, 11, 0));
+  matrix.drawPixel(7, 13, matrix.Color444(15, 11, 0));
+  matrix.drawPixel(8, 13, matrix.Color444(15, 11, 0));
 
-  matrix.drawPixel(6, 14, matrix.Color444(15, 8, 0));
-  matrix.drawPixel(7, 14, matrix.Color444(15, 8, 0));
+  matrix.drawPixel(6, 14, matrix.Color444(15, 11, 0));
+  matrix.drawPixel(7, 14, matrix.Color444(15, 11, 0));
 
  if(doodleCycle == 0){
 
@@ -1358,9 +1358,9 @@ void drawDoodleDay(){
 
     matrix.drawPixel(4, 12, matrix.Color444(15, 15, 15));
 
-    matrix.drawPixel(7, 11, matrix.Color444(15, 8, 0));
+    matrix.drawPixel(7, 11, matrix.Color444(15, 11, 0));
 
-    matrix.drawPixel(6, 12, matrix.Color444(15, 8, 0));
+    matrix.drawPixel(6, 12, matrix.Color444(15, 11, 0));
 
     matrix.drawPixel(10, 13, matrix.Color444(15, 15, 15));
     matrix.drawPixel(11, 13, matrix.Color444(15, 15, 15));
